@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="images/songs/files.js"></script>
+    <script src="player.js">
+        </script>
+    
+     
+    <title>MOBILE AUDIO</title>
+    <style>
+    .id{
+  position: relative;
+  min-height: 400px;
+
+
+}
+.tables{
+position: absolute;
+    height:130px;
+    width:100px;
+    background-color: blue;
+    right: 40px;
+    bottom: 135%;
+    left: 12%;
+}
+
+.id1{
+position:absolute;
+right:10px;
+left: 12%;
+bottom: 128%;
+}
+
+#id2{
+display: none;
+position: absolute;
+left: 30%;
+bottom: 100%;
+}
+.display{
+position: absolute;
+bottom: 170%;
+left: 11.5%;
+}
+.id3{
+
+position: absolute;
+left: 19%;
+bottom: 170%;
+}
+.id4{
+position:absolute;
+right:10px;
+left: 16%;
+bottom: 128%;
+}
+    
+    </style>
+</head>
+<body>
+    
+    
+        <img src="images/smartphone.jpg" alt="smartphone.jpg" width="400" height="400">
+        
+        <div class="id">
+        <table  class="tables" border="1" >
+
+     
+        <tr>
+              <td>  <input type="button"    onclick="for1(this.value)" value="1"></td>
+                <td><input type="button"    onclick="for1(this.value)" value="2"></td>
+                <td><input type="button"   onclick="for1(this.value)" value="3"></td>
+         </tr>
+         <tr>
+                <td><input type="button"   onclick="for1(this.value)" value="4"></td>
+                <td><input type="button"   onclick="for1(this.value)" value="5"></td>
+                <td><input type="button"    onclick="for1(this.value)" value="6"></td>
+                  
+         </tr>
+        <tr>
+                 <td> <input type="button"   onclick="for1(this.value)" value="7"></td>
+                 <td><input type="button"   onclick="for1(this.value)" value="8"></td>
+                 <td><input type="button"   onclick="for1(this.value)" value="9"></td>
+        </tr> 
+                        
+                         
+                    
+           </table>
+
+           <div class="id1">
+            <input type="button"  class="btn btn-success" value="on" id ="play" onclick="openaudioplayer()">
+        
+        </div>
+        <div class="display">
+           <input type="text" size="10"  id="number">
+        </div>
+        <div class="id3">
+                <input type="button"   onclick="backspace()" value="x">
+        </div>
+        <div class="id4">
+                <input type="button"   onclick="clean()" value="Reset">
+        </div>
+        <div id="id2" >
+            <audio   src="images/songs/Bekhayali - Kabir Singh.mp3"   controls>
+                
+            </audio>
+          </div>
+    </div>
+    
+</body>
+</html>
